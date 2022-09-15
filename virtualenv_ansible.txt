@@ -1,0 +1,16 @@
+# Création et Initialisation d'un environnement virtuel Ansible
+
+sudo apt-get install python3-venv 	# Installation du package environnement Virtual
+virtualenv ~/ansible-2.9 		# Initialisation de l'environnement virtuel
+source ansible-2.9/bin/activate 	# Activation de l'environnement virtuel
+
+python3 -m venv ansible			# Initialisation de python3 dans l'environnement virtuel
+
+# Installation des packages nécessaires
+sudo apt-get install python3.7-dev
+sudo apt-get install libpq-dev python-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev
+pip install --upgrade pip
+
+python3 -m pip install ansible==2.9	# Installation du package Ansible dans l'environnement virtuel
+
+deactivate
